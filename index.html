@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -34,6 +35,16 @@
             background: none !important;
             padding: 0 !important;
         }
+    </style>
+
+    <style>
+        .icon-corretora {
+    width: 16px;   /* tamanho pequeno */
+    height: 16px;
+    margin-right: 6px;  /* espaço entre o ícone e o texto */
+    vertical-align: middle;
+}
+
     </style>
     <style id='wp-block-library-inline-css'>
         :root {
@@ -1843,10 +1854,12 @@
                                     </header>
                                     <div class="menu-app-container-fixed">
                                         <nav class="menu-app-nav-fixed">
-                                            
-                                            <a href="https://t.me/genissonsilvaofc" class="menu-app-item-fixed">
-                                                <span class="menu-app-text-fixed">Seu sucesso começa aqui!</span>
+                                            <a href="https://b2xfinance.com/" class="menu-app-item-fixed" target="_blank">
+                                                <img src="corretora.png" 
+                                                    alt="Corretora" class="icon-corretora">
+                                                <span class="menu-app-text-fixed">Corretora</span>
                                             </a>
+
                                            
                                         </nav>
                                     </div>
@@ -2518,10 +2531,10 @@
 
         // Escolhe aleatoriamente comprar ou vender e define o áudio correspondente
         if (Math.random() > 0.5) {
-            message = `Deley detectado: <span style="color: lightgreen;">COMPRAR</span> às ${targetTime.getHours()}:${String(targetTime.getMinutes()).padStart(2, '0')}`;
+            message = `Delay detectado: <span style="color: lightgreen;">COMPRAR</span> às ${targetTime.getHours()}:${String(targetTime.getMinutes()).padStart(2, '0')}`;
             action = 'comprar'; // Ação de compra
         } else {
-            message = `Deley detectado: <span style="color: red;">VENDER</span> às ${targetTime.getHours()}:${String(targetTime.getMinutes()).padStart(2, '0')}`;
+            message = `Delay detectado: <span style="color: red;">VENDER</span> às ${targetTime.getHours()}:${String(targetTime.getMinutes()).padStart(2, '0')}`;
             action = 'vender'; // Ação de venda
         }
 
