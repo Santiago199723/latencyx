@@ -39,21 +39,27 @@
 
     <style>
        .menu-app-item-fixed {
-    display: inline-flex; /* mantém lado a lado */
-    align-items: center; /* centraliza verticalmente */
-    text-decoration: none;
+    display: flex !important; /* força ícone + texto lado a lado */
+    flex-direction: row !important; /* linha horizontal */
+    align-items: center !important; /* centraliza verticalmente */
+    justify-content: center !important;
+    gap: 6px; /* espaço entre ícone e texto */
+    text-decoration: none !important;
 }
 
 .icon-corretora {
-    width: 20px; /* tamanho da logo */
+    width: 46px;
     height: auto;
-    margin-right: 8px; /* espaço entre logo e texto */
+    display: inline-block;
 }
 
 .menu-app-text-fixed {
+    display: inline-block;
     color: white;
     font-size: 14px;
+    line-height: 1; /* evita desalinhamento vertical */
 }
+
 
     </style>
     <style id='wp-block-library-inline-css'>
